@@ -1,0 +1,28 @@
+.sideBar{
+    height: 100vh;
+    flex: 0.2;
+    min-width: 230px;
+    color: white;
+    background-color: #040404;
+    padding: 0 10px;
+    position: fixed;
+    left: 0;
+} 
+
+.sidebar-logo{
+    height: 70px;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.playlist{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.sideBar > hr {
+    border: 1px solid #282828;
+    width: 90%;
+    margin: 9px auto;
+}

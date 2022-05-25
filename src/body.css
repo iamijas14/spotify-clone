@@ -1,0 +1,66 @@
+.body{
+    /* take 80% of the space  */
+    flex: 0.8;      
+    background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));  
+    height: 100vh;
+    color: white;
+    padding: 30px 30px 150px 30px; 
+    overflow-y: overlay;
+    position: absolute;
+    right: 0px;
+    left: 250px;    
+}
+
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.body-info{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.body-info > img {
+    height: 16vw;
+    margin: 0 20px 0 0;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body-infoText{
+    flex: 1;
+}
+
+.body-infoText > h2{
+    font-size: 85px;
+    margin-bottom: 10px;
+}
+
+.body-infoText > p {
+    font-size: 14px;
+}
+
+.body-icons{
+    display: flex;
+    align-items: center;
+}
+
+.body-icons > .MuiSvgIcon-root{
+    margin-right: 20px;
+}
+
+.body-play{
+    font-size:  65px !important;
+    margin: 20px 0 20px 0px;
+    color: #1ed15e;
+}
+
+.body-moreIcon{
+    font-size: 28px !important;
+    opacity: 0.6;
+}
+
+.body-play:hover{
+    transition: 0.1ms transform ease-in;
+    transform: scale(1.08);
+}

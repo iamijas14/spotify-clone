@@ -1,0 +1,80 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 98%;
+    height: 52px;
+    background-color: #282828;
+    padding: 20px;
+
+}
+
+.footer-left{
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 300px;
+    font-size: 14px;
+}
+
+.footer-albumLogo{
+    height: 60px;
+    width:60px;
+    margin-right: 15px;
+    /* object-fit: contain; */
+}
+
+.footer-songInfo > p{
+    font-size: 12px;
+}
+
+.footer-favIcon{
+    margin-left: 30px;
+}
+
+.footer-center{
+    flex: 0.4;
+    padding: 0 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.footer-icon:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+}
+
+.footer-right{
+    flex: 0.3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.footer-right * .MuiSlider-root {
+    color: white;
+    left: 128px;
+    width: 135px;
+}
+
+.footer-volumeIcon{
+    position: absolute;
+    right: 173px;
+    bottom: 35px;
+}
+
+.footer-playListIcon{
+    position: absolute;
+    right: 198px;
+    bottom: 35px;
+}
+
+
+ 
