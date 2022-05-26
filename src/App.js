@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect} from 'react';
 import './App.css';
 import Login from "./Login"
 import Player from './Player';
@@ -50,13 +50,13 @@ function App() {
 
     spotify.getPlaylist('51ETeQvh3BOmqAh8yeunDf').then(response => {
       dispatch({
-        type: "SET_DISCOVER_WEEKLY",
+        type: "SET_PLAYLIST_DETAILS",
         songDetails: response,
       })
     })
+
   }, []);
 
- 
 
   return (
     <div className="App">

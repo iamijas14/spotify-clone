@@ -24,7 +24,7 @@ const reducer = (state, action) => {
                 ...state, playlists: action.playlists
             }
 
-        case 'SET_DISCOVER_WEEKLY' :
+        case 'SET_PLAYLIST_DETAILS' :
             return {
                 ...state, songDetails: action.songDetails
             }
