@@ -1,8 +1,11 @@
 import "./sideBar.css"
 import SideBarOption from "./SideBarOptions" 
+import SideBarPlaylist from "./SideBarPlaylist";
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
+import AddBoxIcon from '@mui/icons-material/AddBox';
+import FavoriteSharpIcon from '@mui/icons-material/FavoriteSharp';
 import { useDataLayerContext } from "./DataLayer";
 
 export const SideBar = () => {
@@ -14,13 +17,14 @@ export const SideBar = () => {
         <SideBarOption Icon={HomeIcon} title="Home"/>
         <SideBarOption Icon={SearchIcon} title="Search"/>
         <SideBarOption Icon={LibraryMusicIcon} title="Your Library"/>
+        <SideBarOption Icon={AddBoxIcon} title="Create Playlist" />
+        <SideBarOption Icon={FavoriteSharpIcon} title="Liked Songs" />
         
         <br/>
         <strong className="playlist">PLAYLIST</strong>
         <hr/>
-
         {playlists?.items?.map(playlist => (
-            <SideBarOption title ={playlist.name} />
+            <SideBarPlaylist title ={playlist.name} />
         ))}
         </div>
     )

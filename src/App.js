@@ -13,7 +13,7 @@ function App() {
   const spotify = new SpotifyWebApi();
 
   //useContext;
-  const [{ isToken }, dispatch] = useDataLayerContext();
+  const [{ isToken, songDetails }, dispatch] = useDataLayerContext();
 
   //once we click on login, take us to login page 
   useEffect(() => {
@@ -57,6 +57,7 @@ function App() {
 
   }, []);
 
+console.log(songDetails);
 
   return (
     <div className="App">

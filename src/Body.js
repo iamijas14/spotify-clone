@@ -4,6 +4,7 @@ import { useDataLayerContext } from "./DataLayer"
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import SongRow from "./SongRow"
+import Titles from "./Titles"
 
 const Body = ({spotify}) => {
 
@@ -42,8 +43,11 @@ const Body = ({spotify}) => {
             <PlayCircleFilledIcon className="body-play" />
             <MoreHorizIcon className="body-moreIcon" />
             </div>
+            <div>
+                <Titles />
+            </div>
             {songDetails?.tracks.items.map(item => (
-                <SongRow track={item.track} />
+                <SongRow item={item} />
             ))}
         </div>
         </div>

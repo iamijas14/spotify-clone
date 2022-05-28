@@ -1,0 +1,20 @@
+.titles{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding: 20px 20px 0px 20px;
+    font-size: 13px;
+    color: white;
+    opacity: 0.7;
+    
+}
+
+.titles > p:nth-of-type(1){
+    margin-right: 200px;
+}
+
+.heading > hr {
+    margin-bottom: 20px;
+    margin-top: 1px;
+    width: 101%;
+}

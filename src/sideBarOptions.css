@@ -13,11 +13,18 @@
 
 .sidebarOption-icon{
     padding: 0 10px;
-
 }
 
 .sidebarOption > p{
-    margin-top: 10px;
     margin-left: 20px;
-    font-size: 17px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.sidebarOption:nth-child(5) {
+    margin-top: 25px
+}
+
+.playlistName{
+    padding: 0;
 }

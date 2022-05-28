@@ -32,3 +32,25 @@
     height: 40px;
     width: 40px;
 }
+
+.album{
+    position: absolute;
+    left: 365px;
+    margin-left: 200px;
+    opacity: 0.7;
+}
+
+.added-at{
+    position: absolute;
+    right: 136px;
+    margin-right: 200px;
+    opacity: 0.7;
+
+}
+
+.time{
+    position: absolute;
+    right: 0;
+    margin-right: 45px;
+    opacity: 0.7;
+}
