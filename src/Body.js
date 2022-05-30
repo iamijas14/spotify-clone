@@ -5,10 +5,11 @@ import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import SongRow from "./SongRow"
 import Titles from "./Titles"
+import CreatePlaylist from "./CreatePlaylist";
 
 const Body = ({spotify}) => {
 
-    const [{songDetails}] = useDataLayerContext();
+    const [{songDetails, createPlaylist}] = useDataLayerContext();
 
     // convert milliseconds into Hours:min format
     const duration = songDetails?.tracks.items.map(item => (
@@ -50,6 +51,7 @@ const Body = ({spotify}) => {
                 <SongRow item={item} />
             ))}
         </div>
+        <CreatePlaylist />
         </div>
     )
 }

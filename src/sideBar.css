@@ -1,7 +1,7 @@
 .sideBar{
     height: 100vh;
     flex: 0.2;
-    min-width: 230px;
+    min-width: 220px;
     color: white;
     background-color: #040404;
     padding: 0 10px;
@@ -24,5 +24,5 @@
 .sideBar > hr {
     border: 1px solid #282828;
     width: 90%;
-    margin: 11px auto;
+    margin: 9px auto;
 }

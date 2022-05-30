@@ -1,14 +1,15 @@
 .body{
     /* take 80% of the space  */
     flex: 0.8;      
-    background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));  
+    /* background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));   */
+    background: linear-gradient(rgb(169, 75, 75), rgb(0, 0, 0)); 
     height: 100vh;
     color: white;
     padding: 30px 30px 150px 30px; 
     overflow-y: overlay;
     position: absolute;
     right: 0px;
-    left: 250px;    
+    left: 240px;    
 }
 
 .body::-webkit-scrollbar {

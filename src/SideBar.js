@@ -17,7 +17,12 @@ export const SideBar = () => {
         <SideBarOption Icon={HomeIcon} title="Home"/>
         <SideBarOption Icon={SearchIcon} title="Search"/>
         <SideBarOption Icon={LibraryMusicIcon} title="Your Library"/>
-        <SideBarOption Icon={AddBoxIcon} title="Create Playlist" />
+
+        <buuton onClick = {() => dispatch({
+            type: 'CREATE_PLAYLIST',
+            toggle: true
+        })}><SideBarOption Icon={AddBoxIcon} title="Create Playlist" /></buuton> 
+
         <SideBarOption Icon={FavoriteSharpIcon} title="Liked Songs" />
         
         <br/>
