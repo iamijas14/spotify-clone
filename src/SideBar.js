@@ -10,7 +10,7 @@ import { useDataLayerContext } from "./DataLayer";
 
 export const SideBar = () => {
     const[{playlists}, dispatch] = useDataLayerContext();
-
+    
     return (
         <div className="sideBar">
         <img className="sidebar-logo" src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg" alt="spotify-logo"/>

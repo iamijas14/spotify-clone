@@ -11,6 +11,12 @@ const scopes = [
     "user-read-playback-state",
     "user-top-read", 
     "user-modify-playback-state",
+    "playlist-read-collaborative",
+    "playlist-modify-public",
+    "playlist-read-private",
+    "playlist-modify-private",
+    "app-remote-control",
+    "streaming"
     ]
 
     // get the response token once the authentication is done

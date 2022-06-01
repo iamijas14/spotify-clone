@@ -6,14 +6,12 @@ import { getTokenFromUrl } from "./spotifyLogin"
 import SpotifyWebApi from 'spotify-web-api-js';
 import { useDataLayerContext } from "./DataLayer"
 
-
-
 function App() {
   //create instance of spotify web api, allows to communicate to spotify
   const spotify = new SpotifyWebApi();
 
   //useContext;
-  const [{ isToken, songDetails }, dispatch] = useDataLayerContext();
+  const [{ isToken, setPlaylist }, dispatch] = useDataLayerContext();
 
   //once we click on login, take us to login page 
   useEffect(() => {
@@ -55,9 +53,25 @@ function App() {
       })
     })
 
+    spotify.play(
+      {
+        "context_uri": "spotify:track:3HiobOOpSpMsi95WBKPBYk",
+        "offset": {
+          "position": 5
+        },
+        "position_ms": 0
+      }
+    ).then(data => console.log(data))
+
   }, []);
 
-console.log(songDetails);
+//   useEffect(() => {
+//     spotify.createPlaylist('317xoel2fl3kfh6rske3pfxgbcfq',{
+//         "name": "helooo",
+//         'description': 'New playlist description',
+//         'public': true
+//         }).then(data => console.log('Created playlist!', data))
+// }, [setPlaylist]) 
 
   return (
     <div className="App">

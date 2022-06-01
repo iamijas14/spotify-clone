@@ -28,8 +28,10 @@
     margin-bottom: 15px;
     border-radius: 5px;
     border: none;
-    background-color: #a3a3a3;
-    color: white;
+    background: rgba(255,255,255,.1);
+    color: black;
+    font: 800;
+    font-size: 17px;
     outline: none;
     width: 250px;
     resize: none;

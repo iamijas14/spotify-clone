@@ -3,7 +3,7 @@ export const initialState = {
     playlists: [],
     playing: false,
     item: null,
-    createPlaylist: false,
+    toggle: false,
     // isToken: "BQBAiAq79y2cPR4MxSPlJ-d6lz4WQ1yOVBL-SPB18ZDeQT_4yH8GEkgcVz7VZRIHrAnvUAmkl_76WScBeao5XOhkOUgbxCLo3WsvJJuMNZKxhQJizn6-OneUJyI1RB1fknwmMdGhAH9goSl2UOscHpXYU0zp4_ArFGR89pRrPg2rVeAk7VWm"
 }
 
@@ -32,12 +32,12 @@ const reducer = (state, action) => {
 
         case 'CREATE_PLAYLIST' :
             return {
-                ...state, createPlaylist: action.toggle
+                ...state, toggle: action.toggle
             }
 
-        case 'SAVE_PLAYLIST' :
+        case 'SET_PLAYLIST' :
             return {
-                    ...state, createPlaylist: action.toggle
+                    ...state, setPlaylist: action.set, toggle: !state.toggle
             }
 
         default:
